@@ -1,6 +1,4 @@
-﻿
-
-namespace Collections.Collections
+﻿namespace Collections
 {
     public class ListClass
     {
@@ -22,8 +20,8 @@ namespace Collections.Collections
 
             //With Lambda Function
             list.ForEach(x => Console.WriteLine(x.Name));
-           
-            
+
+
             var teenAger = list.Where(x => x.Age < 20 && x.Age > 10);
 
             foreach (var item in teenAger)

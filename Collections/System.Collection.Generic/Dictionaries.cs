@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Collections.Collections
+namespace Collections.System.Collection.Generic
 {
     internal class Dictionaries
     {
         public void Function()
         {
+            /*Dictioary is Genraic Collection that store key value
+             * pair*/
+
             int search = 123;
             //Creating Dictionary using collection-initializer
-            Dictionary<int, string> dic = new Dictionary<int, string>() {
+            Dictionary<int, string> dictionary = new Dictionary<int, string>() {
                 { 1,"a"},
                 { 2,"ab"},
                 { 3,"ac" },
@@ -21,28 +24,19 @@ namespace Collections.Collections
             };
 
             //Insertion
-            dic.Add(123, "ali");
-            dic.Add(1232, "moazam");
-            dic.Add(12433, "ali moazma");
+            dictionary.Add(123, "ali");
+            dictionary.Add(1232, "moazam");
+            dictionary.Add(12433, "ahmad");
+            //Updating value using key
 
-
-
-            //Updating 
-
-            dic[2] = "Hello I am 2";
+            dictionary[2] = "updated";
 
             //searching
-            foreach (int i in dic.Keys)
-            {
-                if (dic.ContainsKey(search))
-                {
-                }
-            }
+            dictionary.ContainsValue("ali");
             //Removing items
-            dic.Remove(123);
-
+            dictionary.Remove(123);
             //Remove All
-            dic.Clear();
+            dictionary.Clear();
 
         }
     }

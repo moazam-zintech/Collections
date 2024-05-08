@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Collections.Collections
+﻿namespace Collections.System.Collection.Generic
 {
     internal class Queues
     {
         public void Function()
         {
-            
+
             Queue<string> queue = new Queue<string>();
             //Inserting Data Queue(FIFO)
             queue.Enqueue("a");
@@ -23,7 +17,7 @@ namespace Collections.Collections
 
 
             //Searching Data
-            bool check=queue.Contains("a");
+            bool check = queue.Contains("a");
 
 
 

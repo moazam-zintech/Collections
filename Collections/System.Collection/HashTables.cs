@@ -9,8 +9,10 @@ namespace Collections.System.Collection
 {
     internal class HashTables
     {
+
         public void Function()
         {
+            /*A hashtable is a non-generic collection that stores key-value pairs.*/
             Hashtable ht = new Hashtable()
             {
                 { 1,"a"},
@@ -32,5 +34,15 @@ namespace Collections.System.Collection
                 Console.WriteLine(ht[key]);
             }
         }
+
+         /* Key Uniqueness: Keys in a hashtable must be unique. If you attempt to add a duplicate key, 
+         * an exception is typically thrown.
+         * 
+         * 
+         * 
+         * Non-Generic: Hashtables are non-generic, meaning they can store any type of object as keys
+         * and values. 
+         * However, for type safety and better performance, consider using the generic
+         * Dictionary<TKey, TValue> class from the System.Collections.Generic namespace in modern C# development.*/
     }
 }

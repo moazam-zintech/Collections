@@ -5,6 +5,14 @@ namespace Collections.System.Collection.Generic
     {
         public void Function()
         {
+
+            /*HashSet<T> is a collection that represents an unordered set of unique elements. 
+             * It's designed for scenarios where you need to efficiently:
+
+
+            Store unique elements: No duplicate values are allowed within a HashSet.
+            Check for element existence: Quickly determine if an element is present in the set.*/
+
             HashSet<string> keys = new HashSet<string>()
             {
                 "c",
@@ -12,6 +20,10 @@ namespace Collections.System.Collection.Generic
                 "c#",
                 "Python"
             };
+
+            //Duplicate will not be added
+            keys.Add("c");
+
             foreach (string key in keys)
             {
                 Console.WriteLine(key);

@@ -26,10 +26,9 @@ namespace Collections.System.Collection.Generic
             stack.Count();
             stack.Reverse();
 
-            Console.WriteLine("...........................................");
 
             Console.WriteLine(stack.Peek());
-            Console.WriteLine("...........................................");
+        
 
 
             foreach (var item in stack)

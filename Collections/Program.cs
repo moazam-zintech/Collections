@@ -8,9 +8,6 @@ namespace Collections
         {
             // InputsClass inputs = new InputsClass();
             //inputs.InputFunction();
-         
-
         }
     }
-    
 }

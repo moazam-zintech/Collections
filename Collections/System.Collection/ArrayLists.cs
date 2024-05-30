@@ -15,9 +15,13 @@ namespace Collections.System.Collection
             /*   Its Same as array, the diffrence is its size increase dynamicaly 
               */
 
+            /*ArrayList is a non-generic collection that represents a resizable array of objects. 
+             * It offers a dynamic way to store elements of various data types, unlike traditional arrays with fixed sizes.*/
 
-            Console.WriteLine("..........Create An Array, Add items in Array List......\n");
-            //Create An Array
+
+            /*Create An Array, Add items in Array List.*/
+
+        
             var array = new ArrayList()
             {
                 1,2,3,4,"ali",4.3
@@ -29,7 +33,7 @@ namespace Collections.System.Collection
                 Console.Write(item + ",");
             }
 
-            Console.WriteLine("\n\n\n..........Adding Entire Array into ArrayList......\n");
+            /*Adding Entire Array into ArrayList*/
             char[] vovels = { 'a', 'e', 'i', 'u' };
 
             array.AddRange(vovels);
@@ -39,30 +43,28 @@ namespace Collections.System.Collection
                 Console.Write(item + ",");
             }
 
-            Console.Write("\n\n\n..........Update Array using index......\n");
+            /*Update Array using index*/
             array[array.Count - 1] = "Last digit get updated";
             foreach (var item in array)
             {
                 Console.Write(item + ",");
             }
 
-            Console.Write("\n\n\n..........Remove Element from Array.....\n");
-            //Delete Item from Array
+            /*Remove Element from Array*/
+         
             array.RemoveAt(array.Count - 1);
             array.RemoveRange(array.Count - 4, 3);
 
-            Console.Write("\n\n\n....................................\n");
-
-            // Retrive List
+            /*Retrive List*/
             foreach (var item in array)
             {
                 Console.Write(item + ",");
             }
 
-            //Search Item from List
+            /*Search Item from List*/
             array.Contains("e");
 
-            //check Index
+            /*check Index*/
             array.IndexOf("a");
 
         }
